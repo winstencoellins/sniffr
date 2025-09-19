@@ -31,6 +31,10 @@ model Transactions {
 
   amount          Int
 
+  dateCreated     DateTime        @default(now())
+  dateCompleted   DateTime?
+
+  description     String
 }
 
 enum FriendStatus {
